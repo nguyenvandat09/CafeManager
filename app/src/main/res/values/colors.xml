@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#17181B</color>
+    <color name="purple_700">#04103A</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#0E1013</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorBackground">#04103A</color>
+<!--    <color name="colorXanhSang">#5CE0FE</color>-->
+    <color name="colorXanhSang">#BF4C41</color>
+    <color name="colorXanhDam">#0A194A</color>
+    <color name="colorText">#6D6F77</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorDark">#3A3E41</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="red">#FF0000</color>
+    <color name="red2">#98042D</color>
+    <color name="colorxam">#17181B</color>
+    <color name="green">#00FF00</color>
+    <color name="dark2">#2D3236</color>
+    <color name="white2">#E1E2E7</color>
+</resources>

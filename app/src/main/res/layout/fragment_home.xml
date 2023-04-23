@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E1E2E7"
+    android:orientation="vertical"
+    tools:context=".ui.HomeActivity">
+
+    <include
+        layout="@layout/tool_bar"
+        />
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/logoHomePageActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@null"
+        android:backgroundTint="@null"
+        android:backgroundTintMode="@null"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="welcomeamiation.json"
+        app:lottie_loop="true" />
+    <EditText
+        android:id="@+id/etaddsoban"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_baseline_table_restaurant_24"
+        android:textColorHint="@color/colorXanhSang"
+        android:textColor="@color/colorXanhSang"
+        android:background="@null"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add Table"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="20dp"
+        android:id="@+id/recyclerviewban"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

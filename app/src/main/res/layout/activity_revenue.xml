@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2"
+    android:orientation="vertical"
+    tools:context=".ui.RevenueActivity">
+    <include layout="@layout/tool_bar"
+        />
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <soup.neumorphism.NeumorphCardView
+            android:foreground="?android:attr/selectableItemBackground"
+            app:neumorph_backgroundColor="@color/white2"
+            app:neumorph_shadowColorLight="@color/white"
+            app:neumorph_shadowColorDark="@color/white"
+            android:id="@+id/btnStartDate"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            style="@style/Widget.Neumorph.CardView">
+            <TextView
+                android:textColor="@color/white"
+                android:background="@color/teal_200"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Star Date"
+                android:textStyle="bold"
+                android:textSize="10dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:textColor="@color/colorXanhSang"
+                    android:id="@+id/dayStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="dd"
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+                <TextView
+                    android:textColor="@color/colorXanhSang"
+                    android:id="@+id/monthAndYearStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="MM/yyyy"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+        <soup.neumorphism.NeumorphCardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/btnEndDate"
+            app:neumorph_backgroundColor="@color/white2"
+            app:neumorph_shadowColorLight="@color/white"
+            app:neumorph_shadowColorDark="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            style="@style/Widget.Neumorph.CardView">
+            <TextView
+                android:textColor="@color/white"
+                android:background="@color/red"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End Date"
+                android:textStyle="bold"
+                android:textSize="10dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:textColor="@color/colorXanhSang"
+                    android:id="@+id/dayEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="dd"
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+                <TextView
+                    android:textColor="@color/colorXanhSang"
+                    android:id="@+id/monthAndYearEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="MM/yyyy"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+        <soup.neumorphism.NeumorphCardView
+            android:visibility="invisible"
+            android:id="@+id/btnSubmit"
+            app:neumorph_backgroundColor="@color/colorxam"
+            app:neumorph_shadowColorLight="#30353B"
+            app:neumorph_shadowColorDark="#30353B"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            style="@style/Widget.Neumorph.CardView">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:textColor="@color/colorXanhSang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Submit"
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvRevenue"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Revenue: "
+        android:textSize="20dp"
+        android:textColor="@color/colorXanhSang"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/tvDaTra"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mang đi: "
+        android:textSize="20dp"
+        android:textColor="@color/green"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/tvChuaTra"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tại bàn: "
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/red"
+        android:layout_marginLeft="20dp"/>
+
+
+
+
+</LinearLayout>

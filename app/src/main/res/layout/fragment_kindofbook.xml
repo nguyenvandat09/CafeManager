@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1E2E7"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.Fragment.KindofbookFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:layout_alignParentTop="true"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnAddKindofbook"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/btnAddKindofbook"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/gradient_button1"
+        android:backgroundTint="@null"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:backgroundTint="@null" />
+</RelativeLayout>

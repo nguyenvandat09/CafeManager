@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1E2E7"
+
+    tools:context=".ui.GiohangActivity">
+    <EditText
+        android:layout_alignParentTop="true"
+        android:id="@+id/etSearchg"
+        android:padding="20dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:textColorHint="@color/colorXanhSang"
+        android:textColor="@color/colorXanhSang"
+        android:background="@null"
+        android:imeOptions="actionSearch"
+        android:inputType="textCapSentences|textAutoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name , Kind "/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/etSearchg"
+        android:id="@+id/recyclerviewg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"/>
+</RelativeLayout>

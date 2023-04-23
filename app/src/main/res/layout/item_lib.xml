@@ -1,0 +1,77 @@
+<androidx.cardview.widget.CardView android:id="@+id/idMember"
+
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="15dp"
+    app:cardCornerRadius="20dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/gradient_16"
+        android:padding="20dp">
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:padding="5dp"-->
+<!--            android:id="@+id/imageLib"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--            android:layout_width="69dp"-->
+<!--            android:layout_height="69dp"-->
+<!--            android:src="@drawable/book2"-->
+<!--            app:civ_border_width="3dp"-->
+<!--            app:civ_border_color="@color/colorXanhSang"/>-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:maxLines="1"
+                android:id="@+id/nameLib"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Member"
+                android:textSize="15dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:maxLines="1"
+                android:id="@+id/username"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Member"
+                android:textSize="13dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/ivEdit"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="3dp"
+            android:src="@drawable/ic_baseline_mode_edit_outline_24"
+            android:background="?android:attr/selectableItemBackgroundBorderless"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/ivDeletecong"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="3dp"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
